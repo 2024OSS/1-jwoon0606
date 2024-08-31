@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font: 100% Lucida Sans, Verdana;
+        margin: 20px;
+        line-height: 26px;
+    }
+
+    #top,
+    #sidebar,
+    #bottom,
+    #menuitem {
+        border-radius: 4px;
+        margin: 4px;
+    }
+
+    #top {
+        background-color: #04AA6D;
+        color: white;
+        padding: 15px;
+    }
+
+    #top h1,
+    #top p,
+    #menulist {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #maincontainer {
+        overflow: auto;
+        position: relative;
+    }
+
+    #stylesheet {
+        width: 200px;
+        float: left;
+    }
+
+    #menuitem {
+        background-color: #f1f1f1;
+        border: 1px solid #d4d4d4;
+        list-style-type: none;
+        padding: 2px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #menuitem:first-child {
+        background-color: #04AA6D;
+        color: white;
+        font-weight: bold;
+    }
+
+    #main {
+        padding: 10px;
+        margin-right: 210px;
+        margin-left: 210px;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    #sidebar {
+        width: 180px;
+        background-color: #32a4e7;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        padding: 10px;
+    }
+
+    #bottom {
+        background-color: #f1f1f1;
+        border: 1px solid #d4d4d4;
+        font-size: 70%;
+        padding: 10px;
+        line-height: 14px;
+        text-align: center;
+    }
+
+    @media (max-width: 800px) {
+        #sidebar {
+            width: auto;
+            position: relative;
+        }
+        #main {
+            margin-right: 0px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #stylesheet {
+            width: auto;
+            float: none;
+        }
+        #main {
+            margin: 0;
+        }
+    }
+</style>
+
+<body>
+    <div id="top">
+        <h1 class="white">Welcome to NamJongwoon's Homepage 22000220</h1>
+        <p class="white nospace">Use the menu to select different Stylesheets</p>
+    </div>
+    <div id="maincontainer">
+        <div id="stylesheet">
+            <ul id="menulist">
+                <li id="menuitem">Stylesheet 1</li>
+                <li id="menuitem">Stylesheet 2</li>
+                <li id="menuitem">Stylesheet 3</li>
+                <li id="menuitem">Stylesheet 4</li>
+                <li id="menuitem">No Stylesheet</li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1>Same Page Different Stylesheets</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                change the layout of this page by selecting different stylesheets in the menu, or by selecting one
+                of
+                the following links:<br>
+                <a href="#">Stylesheet1</a>,
+                <a href="#">Stylesheet2</a>,
+                <a href="#">Stylesheet3</a>,
+                <a href="#">Stylesheet4</a>.
+            </p>
+            <h2>No Styles</h2>
+            <p>
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the
+                page
+                looks like with no stylesheet:<br>
+                <a href="#">No Stylesheet</a>.
+            </p>
+        </div>
+        <div id="sidebar">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore
+                magna aliquam erat volutpat.
+            </p>
+        </div>
+    </div>
+    <div id="bottom">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+        laoreet dolore
+        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis
+        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+        esse
+        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+        dignissim qui
+        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    </div>
+</body>
+
+</html>
