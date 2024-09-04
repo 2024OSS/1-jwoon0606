@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            display: flex;
+            font-size: 1.125rem;
+            text-anchor: middle;
+            box-sizing: border-box;
+        }
+
+        #container {
+            padding: 1em;
+            max-width: 42em;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #top {
+            height: 38%;
+            margin-bottom: auto;
+        }
+
+        #top h3 {
+            font-size: calc(1.3rem + .6vw);
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+            float: left;
+        }
+
+        #top nav {
+            float: right;
+            display: flex;
+        }
+
+        .navlist {
+            color: rgba(255, 255, 255, .5);
+            border-bottom-color: #fff;
+            border-bottom: .25rem solid transparent;
+            font-weight: 700;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+            text-decoration: none;
+            margin-left: 16px;
+            border: 0;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+            cursor: pointer;
+            position: relative;
+            padding-bottom: 5px;
+            position: relative;
+        }
+
+        .navlist::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        .navlist:hover::after,
+        .navlist.active:hover::after {
+            background-color: #525252;
+        }
+
+        .navlist.active::after {
+            background-color: #fff;
+        }
+
+        .active {
+            color: white;
+            margin: 0;
+        }
+
+        #main {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            line-height: 30px;
+        }
+
+        #main h1 {
+            font-size: calc(1.375rem + 1.5vw);
+        }
+
+        #main p {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        #button {
+            margin: 0;
+        }
+
+        #learn {
+            display: inline-block;
+            color: #333;
+            text-shadow: none;
+            background-color: white;
+            border: 1px solid rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
+            padding: 0.5rem 1rem;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight:bold;
+        }
+
+        #learn:hover {
+            cursor: pointer;
+        }
+
+        #bottom {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            width: auto;
+            transform: translateX(-50%);
+            text-align: center;
+            color: rgba(169, 169, 169, 0.75);
+        }
+
+        #bottom p {
+            font-size: 17px;
+            margin: 0;
+        }
+
+        #bottom a {
+            color:white;
+            text-decoration: underline;
+        }
+
+        #bottom a:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top">
+            <h3>Cover</h3>
+            <nav>
+                <a href="#" class="navlist active">Home</a>
+                <a href="#" class="navlist">Features</a>
+                <a href="#" class="navlist">Contact</a>
+            </nav>
+        </div>
+        <div id="main">
+            <h1>Cover your page.</h1>
+            <p>Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and
+                add your own fullscreen background photo to make it your own.</p>
+            <p id="button">
+                <a id="learn">Learn more</a>
+            </p>
+        </div>
+        <div id="bottom">
+            <p>Cover template for
+                <a href="https://getbootstrap.com/">Bootstrap</a>
+                , by
+                <a href="https://x.com/mdo">@mdo</a>
+                .
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
